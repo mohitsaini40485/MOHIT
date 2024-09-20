@@ -1,7 +1,7 @@
 /**
  * Card Trick class
- * Modifier: Pravsimranpreet Kaur, 991718686
- * Date Modified: [18 September 2024]
+ * Modifier: Mohit Kumar, 991747327
+ * Date Modified: [20 September 2024]
  */
 
 
