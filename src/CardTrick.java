@@ -3,10 +3,7 @@
  * Modifier: Mohit Kumar, 991747327
  * Date Modified: [20 September 2024]
  */
-
-
 public class CardTrick {
-
     public static void main(String[] args) {
         // Array to hold the suits of cards
         String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
@@ -25,6 +22,26 @@ public class CardTrick {
         System.out.println("Your magic hand of cards:");
         for (Card card : hand) {
             System.out.println(card);
+        }
+
+        // Adding the luckyCard object (hardcoded)
+        Card luckyCard = new Card(7, "Hearts");  // Example hardcoded lucky card
+        System.out.println("\nYour lucky card is: " + luckyCard);
+
+        // Check if the lucky card is in the hand
+        boolean isLuckyCardFound = false;
+        for (Card card : hand) {
+            if (card.equals(luckyCard)) {
+                isLuckyCardFound = true;
+                break;
+            }
+        }
+
+        // Report the result
+        if (isLuckyCardFound) {
+            System.out.println("Congratulations! Your lucky card is in the magic hand.");
+        } else {
+            System.out.println("Sorry, your lucky card is not in the magic hand.");
         }
     }
 }
